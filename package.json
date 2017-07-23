@@ -1,0 +1,21 @@
+{
+  "name": "vue-template",
+  "version": "0.1.0",
+  "main": "main.js",
+  "description": "A template for an electron app using the vue framework.",
+  "license": "Apache-2.0",
+  "scripts": {
+    "clean": "rimraf node_modules",
+    "start": "./node_modules/.bin/electron ."
+  },
+  "devDependencies": {
+    "rimraf": "latest"
+  },
+  "dependencies": {
+    "electron": "latest",
+    "electron-reload": "latest",
+    "jshint": "latest",
+    "vue": "latest",
+    "w3-css": "^4.0.4"
+  }
+}
