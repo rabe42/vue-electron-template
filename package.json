@@ -1,21 +1,33 @@
 {
-  "name": "vue-template",
+  "name": "vue-electron-template",
   "version": "0.1.0",
   "main": "main.js",
   "description": "A template for an electron app using the vue framework.",
   "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rabe42/vue-electron-template"
+  },
   "scripts": {
-    "clean": "rimraf node_modules",
-    "start": "./node_modules/.bin/electron ."
+    "clean": "rimraf node_modules dist",
+    "start": "./node_modules/.bin/electron .",
+    "build": "./node_modules/.bin/webpack"
   },
   "devDependencies": {
-    "rimraf": "latest"
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "css-loader": "latest",
+    "file-loader": "latest",
+    "rimraf": "latest",
+    "vue-loader": "latest",
+    "vue-template-compiler": "latest",
+    "webpack": "^3.4.1"
   },
   "dependencies": {
     "electron": "latest",
     "electron-reload": "latest",
     "jshint": "latest",
     "vue": "latest",
-    "w3-css": "^4.0.4"
+    "w3-css": "latest"
   }
 }
