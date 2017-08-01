@@ -10,7 +10,7 @@
   },
   "scripts": {
     "clean": "rimraf node_modules dist",
-    "start": "./node_modules/.bin/electron .",
+    "start": "electron .",
     "build": "./node_modules/.bin/webpack --watch &"
   },
   "devDependencies": {
