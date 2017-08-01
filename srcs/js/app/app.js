@@ -1,4 +1,4 @@
-import hello from '../hello/hello.vue'
+import hello from '../hello/hello'
 
 new Vue({
     el: '#app',
