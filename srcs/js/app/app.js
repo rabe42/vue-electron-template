@@ -1,3 +1,4 @@
+import Vue from 'vue'
 import hello from '../hello/hello'
 
 new Vue({
