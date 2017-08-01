@@ -14,14 +14,14 @@
     "build": "./node_modules/.bin/webpack --watch &"
   },
   "devDependencies": {
-    "babel-core": "^6.25.0",
-    "babel-loader": "^7.1.1",
+    "babel-core": "latest",
+    "babel-loader": "latest",
     "css-loader": "latest",
     "file-loader": "latest",
     "rimraf": "latest",
     "vue-loader": "latest",
     "vue-template-compiler": "latest",
-    "webpack": "^3.4.1"
+    "webpack": "latest"
   },
   "dependencies": {
     "electron": "latest",
