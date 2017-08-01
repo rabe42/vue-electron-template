@@ -11,6 +11,7 @@ module.exports = {
   module: {
     rules: [
       {
+        // TODO: Not working as expected and documented!
         test: /\.vue$/,
         loader: 'vue-loader',
         options: {
@@ -36,6 +37,7 @@ module.exports = {
   resolve: {
     alias: {
 //      'vue$': 'vue/dist/vue.esm.js'
+// TODO: Not working as documented and described!
       'vue$': 'vue/dist/vue.esm.js'
     }
   },

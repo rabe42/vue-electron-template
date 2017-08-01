@@ -1,4 +1,4 @@
-import hello from '../hello/hello'
+import hello from '../hello/hello.vue'
 
 new Vue({
     el: '#app',
@@ -9,5 +9,8 @@ new Vue({
         sayHello: () => {
             alert("Submitting " + app.message)
         }
+    },
+    components: {
+        hello
     }
 })
