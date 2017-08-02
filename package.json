@@ -11,6 +11,7 @@
   "scripts": {
     "clean": "rimraf node_modules dist",
     "start": "electron .",
+    "compile:view": "webpack  --display-error-details",
     "build": "./node_modules/.bin/webpack --watch &"
   },
   "devDependencies": {
