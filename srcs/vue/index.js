@@ -1,5 +1,5 @@
 // Make the resources of the front end available.
-require("file-loader?name=[name].[ext].[hash]!../../index.html")
+require("file-loader?name=[name].[ext]!../../index.html")
 require("file-loader?name=[name].[ext]!w3-css/w3.css")
 
 // Import the framework and the app
