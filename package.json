@@ -12,7 +12,7 @@
     "clean": "rimraf node_modules dist",
     "start": "electron .",
     "compile:view": "webpack  --display-error-details",
-    "compile:view:watch": "webpack --watch --display-error-details &"
+    "compile:view:watch": "webpack --display-error-details --watch"
   },
   "devDependencies": {
     "babel-core": "latest",
