@@ -32,13 +32,33 @@ module.exports = {
           name: '[name].[ext]?[hash]'
         }
       },
-      // For support of local font-awesome
+      // For support of font-awesome
+      /**
       { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, 
         loader: "url-loader?limit=10000&mimetype=application/font-woff" 
       },
       { 
-        test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, 
-        loader: "file-loader" 
+        test: /\.(ttf|eot|svg|woff|woff2)(\?v=[0-9]\.[0-9]\.[0-9])?$/, 
+        loader: "file-loader",
+        options: {
+          name: '[name].[ext]?[hash]'
+      }
+      */
+      {
+        test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
+        loader: 'url-loader',
+        query: {
+          limit: 10000,
+          name: path.join(__dirname, 'img/[name].[ext]')
+        }
+      },
+      {
+        test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
+        loader: 'url-loader',
+        query: {
+          limit: 10000,
+          name: path.join(__dirname, 'fonts/[name].[ext]')
+        }
       }
     ]
   },
