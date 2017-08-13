@@ -10,7 +10,7 @@ The objective of this template is to create a simple to use and easy to learn te
 The following targets are defined, which helps you to build your application and operate in the development process:
 
 - **clean** - Deletes dest/ and node_modules/ folder.
-- **start** - Starts the electron application. Requires a compile:view before
+- **start** - Starts the electron application. Requires a compile:view before.
 - **compile:view** - Compile the sources once into the dest directory.
 - **compile:view:watch** - Compile the sources into the dest directory and watches the source files for recompilation.
 
@@ -19,22 +19,65 @@ As there are a lot of templates for electron and Vue available in the open. I tr
 
 Therefore I started with a minimal setting for myself. I try to leave this as easy as possible. Easy to understand also for non professionals.
 
+My approach is also to have always the latest versions of the toolkits in the template, as I don't plan to create anything which is going to production.
+
 ## Intended Audience
 
 **Me!**
 
-Other software engineers, like me, which moved to management, but need to keep track on new technologies.
+Maybe there are other software engineers, like me. They are welcome!
+
+I moved to management, years ago. But I have to keep track on new technologies. My approach is, to create simple applications, with a quite small user group (me), to check which kind of tools are needed to get a full fledged environment: (Code, Test, Deploy, Log, Monitor).
+
+In this particular case, I focus on cloud software with a heavy offline use-case.
 
 ## Components
+
+For the development I'm using Visual Studio Code. But I will not put any of my configuration into this project. As I learned, that the development environment should work without assumptions about the used environment. This is why I try with this project also to rely just on NPM as build tool. Everything beyont the standard node.js environment should be mentioned in this section.
+
 ### electron ###
-### vue ###
+The JavaScript framework for creating platform independent UI applications.
+
+<https://electron.atom.io/>
+
+### Vue.js ###
+To create the user interface, I rely on Vue.js. As it allows to create custom HTML tags in a simple way. It provides a modern approach to UI creation. It uses a all in one file approach with .vue files. Unfortunately, this requires webpack.
+
+<https://vuejs.org/>
+
 ### webpack ###
+To use .vue files, it is higly recommendet to use webpack. Webpack allows to put virtually everything into one file for web applications. I expected that this is also a good decision for electron applications. Unfortunately this is not true! 
+
+Webpack is really hard to understand and even worse documented, when it comes to the loading of fonts.
+
+This is why I had to buy a book, to master it. The explanations on the first pages, accelerate the adoption for somebody, who was already on the `make, ant, maven, gradle, grunt and gulp` path.
+
+<https://webpack.js.org/>
+
 ### w3css ###
+Lightweight and easy to understand framework with much less tags than bootstrap. Nevertheless everything, the average software engineer needs to create a simple and clean UI. 
+
+The w3css is simply pulled with Webpack. You will not even find it in the `dist` directory.
+
+<https://www.w3schools.com/w3css/>
+
 ### Font Awesome ###
+If it comes to UI, I appreciate the use of Icons over the use of labels. As my artwork is quite bad, I try to stick to something, which is created in a professional way.
+
+<http://fontawesome.io/>
+
 ### PouchDB ###
+As virtual every meaningful application needs some sort of persistent memory. I choose PouchDB as my way to store data. It can be combined with an CouchDB or even Couchbase backbone, to provide a simple distributed Cloud Store for your application.
+
+<https://pouchdb.com/>
 
 ## ToDos
 
-- Font Awesome with webpack in electron.
-- PouchDB on server site.
-- Responsive Site Menu
+- Font Awesome with webpack in electron. (Design)
+- Source-Maps (Debugging)
+- Logging (Operation)
+- PouchDB on server site. (Persistence)
+- Responsive Site Menu. (Development Accelerator)
+
+## About Me
+Starting my university education in the early 1980th, I lost track how often, I had to learn a new approach to software develoment. (`Basic, Pascal, C, Modula 2, Lisp, Prolog, MC68k, C++, ML, Scheme, Smalltalk, Java, Scheme, Python, Groovy, JavaScript`)

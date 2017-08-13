@@ -19,10 +19,9 @@
     "babel-loader": "latest",
     "css-loader": "latest",
     "file-loader": "latest",
-    "font-awesome": "latest",
-    "font-awesome-webpack": "0.0.5-beta.2",
+    "font-awesome-webpack": "latest",
     "jshint": "latest",
-    "less": "^2.7.2",
+    "less": "latest",
     "rimraf": "latest",
     "style-loader": "latest",
     "url-loader": "^0.5.9",
@@ -33,6 +32,7 @@
   "dependencies": {
     "electron": "latest",
     "electron-reload": "latest",
+    "font-awesome": "latest",
     "vue": "latest",
     "w3-css": "latest"
   }
