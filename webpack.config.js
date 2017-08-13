@@ -44,6 +44,7 @@ module.exports = {
           name: '[name].[ext]?[hash]'
       }
       */
+      // Try-out for the font problematics.
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
         loader: 'url-loader',
