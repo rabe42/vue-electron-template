@@ -24,7 +24,7 @@
     "less": "latest",
     "rimraf": "latest",
     "style-loader": "latest",
-    "url-loader": "^0.5.9",
+    "url-loader": "latest",
     "vue-loader": "latest",
     "vue-template-compiler": "latest",
     "webpack": "latest"
