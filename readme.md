@@ -1,7 +1,7 @@
 # The Vue Electron Template
 
 ## Remark
-**This is not completed or anyhow ready for start.**
+**This is not completed or anyhow ready to be a starting point in a project.**
 
 ## Objective
 The objective of this template is to create a simple to use and easy to learn template for creating electron applications based on the Vue tookit. It facilates w3css and awesomefont to create a simple responsible clean look and feel.
@@ -72,12 +72,11 @@ As virtual every meaningful application needs some sort of persistent memory. I 
 <https://pouchdb.com/>
 
 ## ToDos
-
-- Font Awesome with webpack in electron. (Design)
 - Source-Maps (Debugging)
 - Logging (Operation)
-- PouchDB on server site. (Persistence)
+- PouchDB on backend site. (Persistence)
 - Responsive Site Menu. (Development Accelerator)
+- Creation of standalone applications (Windows, Mac, Linux)
 
 ## About Me
 Starting my university education in the early 1980th, I lost track how often, I had to learn a new approach to software develoment. (`Basic, Pascal, C, Modula 2, Lisp, Prolog, MC68k, C++, ML, Scheme, Smalltalk, Java, Scheme, Python, Groovy, JavaScript`)
