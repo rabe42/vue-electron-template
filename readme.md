@@ -1,4 +1,4 @@
-# The Vue Electron Template
+# The W3 Vue Electron Template
 
 ## Remark
 **This is not completed or anyhow ready to be a starting point in a project.**
@@ -29,11 +29,11 @@ Maybe there are other software engineers, like me. They are welcome!
 
 I moved to management, years ago. But I have to keep track on new technologies. My approach is, to create simple applications, with a quite small user group (me), to check which kind of tools are needed to get a full fledged environment: (Code, Test, Deploy, Log, Monitor).
 
-In this particular case, I focus on cloud software with a heavy offline use-case.
+In this particular case, I focus on cloud software with a heavy offline use-case. This is why I like to include a distributed NoSQL database into the game.
 
 ## Components
 
-For the development I'm using Visual Studio Code. But I will not put any of my configuration into this project. As I learned, that the development environment should work without assumptions about the used environment. This is why I try with this project also to rely just on NPM as build tool. Everything beyont the standard node.js environment should be mentioned in this section.
+For the development I'm using Visual Studio Code. But I will not put any of my configurations into this project. As I learned, that the development environment should work without assumptions about the used environment. This is why I try with this project also to rely just on NPM as build tool. Everything beyont the standard node.js environment should be mentioned in this section.
 
 ### electron ###
 The JavaScript framework for creating platform independent UI applications.
@@ -46,11 +46,9 @@ To create the user interface, I rely on Vue.js. As it allows to create custom HT
 <https://vuejs.org/>
 
 ### webpack ###
-To use .vue files, it is higly recommendet to use webpack. Webpack allows to put virtually everything into one file for web applications. I expected that this is also a good decision for electron applications. Unfortunately this is not true! 
+To use .vue files, it seems to be higly recommendet to use webpack. Webpack allows to put virtually everything into one file for web applications. I expected that this is also a good decision for electron applications. Unfortunately this is not true! 
 
-Webpack is really hard to understand and even worse documented, when it comes to the loading of fonts.
-
-This is why I had to buy a book, to master it. The explanations on the first pages, accelerate the adoption for somebody, who was already on the `make, ant, maven, gradle, grunt and gulp` path.
+Webpack is really hard to understand and even worse documented, when it comes to the loading of fonts. Even the book, I bought is not really up to help to understand if problems occurs.
 
 <https://webpack.js.org/>
 
@@ -79,4 +77,4 @@ As virtual every meaningful application needs some sort of persistent memory. I 
 - Creation of standalone applications (Windows, Mac, Linux)
 
 ## About Me
-Starting my university education in the early 1980th, I lost track how often, I had to learn a new approach to software develoment. (`Basic, Pascal, C, Modula 2, Lisp, Prolog, MC68k, C++, ML, Scheme, Smalltalk, Java, Scheme, Python, Groovy, JavaScript`)
+Starting my university education in the early 1980th, I lost track how often, I had to learn a new approach to software develoment. (`Basic, Pascal, C, Modula 2, Lisp, Prolog, MC68k, C++, ML, Scheme, Smalltalk, Java, Scheme, Python, Groovy, JavaScript`) I moved to management in 2005 but never lost contact to new technologies.
