@@ -15,25 +15,22 @@
     "compile:view:watch": "webpack --display-error-details --watch"
   },
   "devDependencies": {
-    "babel-core": "latest",
-    "babel-loader": "latest",
     "css-loader": "latest",
     "file-loader": "latest",
-    "font-awesome-webpack": "latest",
     "jshint": "latest",
     "less": "latest",
     "rimraf": "latest",
     "style-loader": "latest",
     "url-loader": "latest",
+    "vue": "latest",
     "vue-loader": "latest",
     "vue-template-compiler": "latest",
+    "w3-css": "latest",
     "webpack": "latest"
   },
   "dependencies": {
     "electron": "latest",
     "electron-reload": "latest",
-    "font-awesome": "latest",
-    "vue": "latest",
-    "w3-css": "latest"
+    "font-awesome": "latest"
   }
 }

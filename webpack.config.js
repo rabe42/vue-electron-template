@@ -5,7 +5,7 @@ module.exports = {
   entry: './srcs/vue/index.js',
   output: {
     path: path.resolve(__dirname, './dist'),
-    publicPath: '/dist/',
+    publicPath: 'dist/',
     filename: 'build.js'
   },
   module: {
@@ -19,11 +19,9 @@ module.exports = {
           // other vue-loader options go here
         }
       },
-      // This is just in case, we would like to have also a web variant.
-      {
-        test: /\.js$/,
-        loader: 'babel-loader',
-        exclude: /node_modules/
+      { 
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
       },
       {
         test: /\.(png|jpg|gif|svg)$/,
@@ -33,18 +31,16 @@ module.exports = {
         }
       },
       // For support of font-awesome
-      /**
-      { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, 
-        loader: "url-loader?limit=10000&mimetype=application/font-woff" 
-      },
       { 
-        test: /\.(ttf|eot|svg|woff|woff2)(\?v=[0-9]\.[0-9]\.[0-9])?$/, 
-        loader: "file-loader",
-        options: {
-          name: '[name].[ext]?[hash]'
-      }
-      */
+        test: /\.(ttf|woff|woff2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, 
+        loader: "url-loader?limit=10000&mimetype=application/font-woff"
+      },
+      {
+        test: /\.(eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loader: "file-loader"
+      },
       // Try-out for the font problematics.
+      /**
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
         loader: 'url-loader',
@@ -61,6 +57,7 @@ module.exports = {
           name: path.join(__dirname, 'fonts/[name].[ext]')
         }
       }
+       */
     ]
   },
   resolve: {
