@@ -33,10 +33,7 @@ module.exports = {
       // For support of font-awesome
       { 
         test: /\.(ttf|woff|woff2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, 
-        loader: "url-loader?limit=10000&mimetype=application/font-woff",
-        options: {
-          publicPath: "dist"
-        }
+        loader: "url-loader?limit=100000&mimetype=application/font-woff",
       },
       {
         test: /\.(eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
@@ -44,26 +41,7 @@ module.exports = {
         options: {
           publicPath: "dist"
         }
-      },
-      // Try-out for the font problematics.
-      /**
-      {
-        test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
-        loader: 'url-loader',
-        query: {
-          limit: 10000,
-          name: path.join(__dirname, 'img/[name].[ext]')
-        }
-      },
-      {
-        test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
-        loader: 'url-loader',
-        query: {
-          limit: 10000,
-          name: path.join(__dirname, 'fonts/[name].[ext]')
-        }
       }
-       */
     ]
   },
   resolve: {
