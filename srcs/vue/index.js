@@ -9,6 +9,9 @@ import 'font-awesome/css/font-awesome.min.css'
 import Vue from 'vue'
 import app from './app/app'
 
+/**
+ * The root of the vue application will be anchored at the #app id in the index.html file.
+ */
 new Vue({
     el: '#app',
     components: {
