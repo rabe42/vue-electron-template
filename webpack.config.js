@@ -32,18 +32,18 @@ module.exports = {
       },
       // For support of font-awesome
       { 
-        test: /\.(ttf|woff|woff2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, 
-        loader: "url-loader",
+        test: /\.(woff|woff2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, 
+        loader: 'url-loader',
         options: {
           limit: 100000, /* Making sure, that the font is embedded! */
-          mimetype: "application/font-woff"
+          mimetype: 'application/font-woff'
         }
       },
       {
-        test: /\.(eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        loader: "file-loader",
+        test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loader: 'file-loader',
         options: {
-          publicPath: "dist"
+          publicPath: 'dist'
         }
       }
     ]
