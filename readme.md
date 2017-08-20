@@ -14,6 +14,9 @@ The following targets are defined, which helps you to build your application and
 - **compile:view** - Compile the sources once into the dest directory.
 - **compile:view:watch** - Compile the sources into the dest directory and watches the source files for recompilation.
 
+### Debugging
+At the time of this writing it is not possible to set breakpoints in .vue files. Nevertheless the debugger statement works. The inline 'eval-source-map' is created by default.
+
 ## Approach
 As there are a lot of templates for electron and Vue available in the open. I tried some of them. Unfortunately a lot of this is outdates or so complicated that I felt uncertain, if this is really what I want.
 
@@ -70,7 +73,6 @@ As virtual every meaningful application needs some sort of persistent memory. I 
 <https://pouchdb.com/>
 
 ## ToDos
-- Source-Maps (Debugging)
 - Logging (Operation)
 - PouchDB on backend site. (Persistence)
 - Responsive Site Menu. (Development Accelerator)
