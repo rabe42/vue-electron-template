@@ -19,6 +19,7 @@
     "file-loader": "latest",
     "jshint": "latest",
     "less": "latest",
+    "log4javascript": "latest",
     "rimraf": "latest",
     "style-loader": "latest",
     "url-loader": "latest",
