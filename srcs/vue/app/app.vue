@@ -11,8 +11,8 @@
 </template>
 
 <script>
-import hello from '../hello/hello'
-import {logger} from '../logger'
+import hello from '../hello/hello' // Default Export
+import {logger} from '../logger' // Explicit Export
 
 export default {
     data () {
