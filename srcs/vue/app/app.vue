@@ -12,6 +12,7 @@
 
 <script>
 import hello from '../hello/hello'
+import {logger} from '../logger'
 
 export default {
     data () {
@@ -22,6 +23,7 @@ export default {
     methods: {
         sayHello: function() {
             alert("Submitting: '" + this.message + "'")
+            logger.info("Submitted!")
         }
     },
     components: {

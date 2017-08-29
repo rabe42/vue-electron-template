@@ -8,12 +8,7 @@ import 'font-awesome/css/font-awesome.min.css'
 // Import the framework and the app
 import Vue from 'vue'
 import app from './app/app'
-import log4javascript from 'log4javascript'
-
-let logger = log4javascript.getLogger();
-let appender = new log4javascript.BrowserConsoleAppender()
-logger.addAppender(appender)
-
+import {logger} from './logger'
 
 /**
  * The root of the vue application will be anchored at the #app id in the index.html file.
