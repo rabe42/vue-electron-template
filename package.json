@@ -32,6 +32,7 @@
   "dependencies": {
     "electron": "latest",
     "electron-reload": "latest",
-    "font-awesome": "latest"
+    "font-awesome": "latest",
+    "winston": "^2.3.1"
   }
 }
