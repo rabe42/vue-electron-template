@@ -2,6 +2,7 @@ var path = require('path')
 var webpack = require('webpack')
 
 module.exports = {
+  target: 'electron',
   entry: './srcs/vue/index.js',
   output: {
     path: path.resolve(__dirname, './dist'),
