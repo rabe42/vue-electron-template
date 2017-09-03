@@ -67,6 +67,21 @@ If it comes to UI, I appreciate the use of Icons over the use of labels. As my a
 
 <http://fontawesome.io/>
 
+### Winston ###
+Logging framework for JavaScript. This is used on backend and frontend site, using the electron remote framework.
+
+<https://github.com/winstonjs/winston>
+
+### Jasmine ###
+The unit test framework. Choosen, because it is complete and doesn't need additional modules.
+
+<https://jasmine.github.io/2.0/introduction.html>
+
+### Spectre ###
+A end to end (e2e) test framework for electron. 
+
+<https://electron.atom.io/spectron/>
+
 ### PouchDB ###
 As virtual every meaningful application needs some sort of persistent memory. I choose PouchDB as my way to store data. It can be combined with an CouchDB or even Couchbase backbone, to provide a simple distributed Cloud Store for your application.
 
