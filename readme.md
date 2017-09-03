@@ -77,7 +77,7 @@ The unit test framework. Choosen, because it is complete and doesn't need additi
 
 <https://jasmine.github.io/2.0/introduction.html>
 
-### Spectre ###
+### Spectron ###
 A end to end (e2e) test framework for electron. 
 
 <https://electron.atom.io/spectron/>
