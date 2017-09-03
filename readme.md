@@ -73,8 +73,9 @@ As virtual every meaningful application needs some sort of persistent memory. I 
 <https://pouchdb.com/>
 
 ## ToDos
-- Logging (Operation)
 - PouchDB on backend site. (Persistence)
+- Unit Test Framework (Development Accelerator)
+- e2e Test Framework (Development Accelerator)
 - Responsive Site Menu. (Development Accelerator)
 - Creation of standalone applications (Windows, Mac, Linux)
 
