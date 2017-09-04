@@ -3,8 +3,8 @@ const {app, BrowserWindow} = require('electron')
 const path = require('path')
 const url = require('url')
 require('electron-reload')(__dirname, {
-  // Reload should ignore changes in node_modules and sources.
-  ignored: /node_modules|[\/\\]\.|srcs/
+  // Reload should ignore changes in node_modules, logs and sources.
+  ignored: /node_modules|[\/\\]\.|logs|\/srcs/
 })
 
 // Keep a global reference of the window object, if you don't, the window will
