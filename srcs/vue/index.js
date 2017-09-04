@@ -20,4 +20,4 @@ new Vue({
     }
 })
 
-logger.info('Application initialized.')
+logger.info('UI initialized.')
