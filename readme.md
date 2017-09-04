@@ -68,7 +68,7 @@ If it comes to UI, I appreciate the use of Icons over the use of labels. As my a
 <http://fontawesome.io/>
 
 ### Winston ###
-Most popular logging framework for JavaScript. This is used on backend and frontend site, using the electron remote framework. This is working on my Linux system out of the box. But troubles me on the MacBook, where it triggers a kind of loop, rendering the system completely unusable.
+Most popular logging framework for JavaScript. This is used on backend and frontend site, using the electron remote framework.
 
 <https://github.com/winstonjs/winston>
 
