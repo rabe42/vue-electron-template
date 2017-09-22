@@ -1,5 +1,7 @@
-import vue from 'Vue'
-import Hello from 'hello'
+//import vue from 'Vue'
+const vue = require('Vue')
+const Hello = require('./hello')
+//import Hello from 'hello'
 
 describe('Hello component', () => {
     it('has a created block', () => {

@@ -19,6 +19,7 @@
     "css-loader": "latest",
     "file-loader": "latest",
     "jasmine": "latest",
+    "jasmine-vue": "^1.0.0",
     "jshint": "latest",
     "less": "latest",
     "log4javascript": "latest",
