@@ -11,7 +11,7 @@
   "scripts": {
     "clean": "rimraf node_modules dist",
     "start": "electron .",
-    "test": "jasmine",
+    "test": "karma start karma.conf.js",
     "compile:view": "webpack  --display-error-details",
     "compile:view:watch": "webpack --display-error-details --watch"
   },
@@ -19,8 +19,12 @@
     "css-loader": "latest",
     "file-loader": "latest",
     "jasmine": "latest",
+    "jasmine-core": "^2.8.0",
     "jasmine-vue": "^1.0.0",
     "jshint": "latest",
+    "karma": "^1.7.1",
+    "karma-jasmine": "^1.1.0",
+    "karma-webpack": "latest",
     "less": "latest",
     "log4javascript": "latest",
     "rimraf": "latest",
