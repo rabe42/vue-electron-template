@@ -2,7 +2,7 @@
 // This is the karma configuration file, providing unit test capabilities for vue via webpack.
 //
 
-const webpackConfig = require(__dirname + '/webpack.config.js') // FIXME: Not possible to read the configuration.
+const webpackConfig = require(__dirname + '/webpack.config.js')
 
 module.exports = function (config) {
   config.set({
