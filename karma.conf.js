@@ -18,8 +18,8 @@ module.exports = function (config) {
       {pattern: './srcs/**/*.spec.js'} // each .spec.js file acts as entry point for the webpack configuration
     ],
     preprocessors: {
-      './srcs/index.js': ['webpack', 'sourcemap'],  // This should run the given file through webpack (I hope!)
-      './srcs/**/*.spec.js': ['webpack', 'sourcemap']
+      './srcs/index.js': ['webpack'],  // This should run the given file through webpack (I hope!)
+      './srcs/**/*.spec.js': ['webpack']
     },
     webpack: webpackConfig, // This should trigger the webpack process for the test.
     webpackMiddleware: {
