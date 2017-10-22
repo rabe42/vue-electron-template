@@ -15,7 +15,7 @@ module.exports = function (config) {
     reporters: ['spec', 'coverage'],
     files: [
       './srcs/index.js',
-      {pattern: 'srcs/**/*.spec.js'} // each .spec.js file acts as entry point for the webpack configuration
+      {pattern: './srcs/**/*.spec.js'} // each .spec.js file acts as entry point for the webpack configuration
     ],
     preprocessors: {
       './srcs/index.js': ['webpack', 'sourcemap'],  // This should run the given file through webpack (I hope!)
@@ -23,7 +23,7 @@ module.exports = function (config) {
     },
     webpack: webpackConfig, // This should trigger the webpack process for the test.
     webpackMiddleware: {
-      noInfo: true
+      noInfo: false
     },
     coverageReporter: {
       dir: './coverage',

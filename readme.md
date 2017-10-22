@@ -72,8 +72,11 @@ Most popular logging framework for JavaScript. This is used on backend and front
 
 <https://github.com/winstonjs/winston>
 
+### Karma ###
+After reading a lot about tests with webpack and vue, it seems the only documented way to get a running test environment is the use of karma webpack plugin.
+
 ### Jasmine ###
-The unit test framework. Choosen, because it is complete and doesn't need additional modules.
+The unit test framework. Choosen, because it is complete and doesn't need additional modules. The world is already complex enough!
 
 <https://jasmine.github.io/2.0/introduction.html>
 
