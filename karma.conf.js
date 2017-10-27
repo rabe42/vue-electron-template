@@ -14,11 +14,11 @@ module.exports = function (config) {
     frameworks: ['jasmine'],
     reporters: ['spec', 'coverage'],
     files: [
-      './srcs/index.js',
+      './srcs/vue/index.js',
       {pattern: './srcs/**/*.spec.js'} // each .spec.js file acts as entry point for the webpack configuration
     ],
     preprocessors: {
-      './srcs/index.js': ['webpack'],  // This should run the given file through webpack (I hope!)
+      './srcs/vue/index.js': ['webpack'],  // This should run the given file through webpack (I hope!)
       './srcs/**/*.spec.js': ['webpack']
     },
     webpack: webpackConfig, // This should trigger the webpack process for the test.
