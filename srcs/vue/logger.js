@@ -3,4 +3,4 @@
  * pathes uses the same logging infrastructure.
  */
 import { remote } from "electron"
-export const logger = remote.getGlobal('guiLogger')
+export const logger = remote.getGlobal("guiLogger")
