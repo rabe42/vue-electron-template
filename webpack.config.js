@@ -1,3 +1,5 @@
+/* global module, __dirname, process, require */
+
 var path = require("path")
 var webpack = require("webpack")
 
